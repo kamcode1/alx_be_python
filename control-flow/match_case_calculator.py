@@ -15,3 +15,5 @@ match operator:
             print(f"The result is {num1 / num2}")   
         else:
             print("cannot divide by zero")
+    case _:
+        print("Invalid operation. Please choose one of +, -, *, /.")
