@@ -20,10 +20,10 @@
 # match_case_calculator.py
 
 # Prompt for User Input
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+# num1 = float(input("Enter the first number: "))
+# num2 = float(input("Enter the second number: "))
 
-operator = input("Choose the operation (+, -, *, /): ")
+# operator = input("Choose the operation (+, -, *, /): ")
 
 # Perform the Calculation Using Match Case
 # match operator:
