@@ -10,7 +10,7 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = int(input("Enter your choice: "))
+        choice = int(input("Enter the item to add: "))
 
         if choice == 1:
             name = input("please provide the name of the item: ")
