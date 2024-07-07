@@ -10,16 +10,16 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
-        if choice == '1':
+        if choice == 1:
             name = input("please provide the name of the item: ")
             item = {"name": name}
             shopping_list.append(item)
             print("Item added Successfully!")
             # Prompt for and add an item
             pass
-        elif choice == '2':
+        elif choice == 2:
             name = input("input item to be removed: ")
             found = False
             for shopping_item in shopping_list:
@@ -30,14 +30,14 @@ def main():
                 print("item not found.")
             # Prompt for and remove an item
             pass
-        elif choice == '3':
+        elif choice == 3:
             if not shopping_list:
                 print("item not found")
             else:
                 for shopping_item in shopping_list:
                   print(f"Item_name: {shopping_item['name']}")
             # Display the shopping list
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
