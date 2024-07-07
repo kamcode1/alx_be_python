@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 def display_current_datetime():
     current_date = datetime.now()
-    formated_current_date = current_date.strftime("%y-%m-%d %H:%M:%S")
+    formated_current_date = current_date.strftime("%Y-%m-%d %H:%M:%S")
     print(f"{formated_current_date}")
 
 display_current_datetime()
