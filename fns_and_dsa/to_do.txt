@@ -1,0 +1,6 @@
+add item
+remove item
+view item
+
+Data structure 
+list
