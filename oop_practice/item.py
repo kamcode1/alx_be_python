@@ -10,12 +10,20 @@ class Item:
 
 
         # Assign to self object
-        self.name = name
+        self.__name = name
         self.price = price
         self.quantity = quantity
 
         # Actions to execute
         Item.all.append(self)
+    @property
+    # Property Decorator = Read-Only Attribute
+    def name(self):
+        return self.__name
+    
+    @name.setter
+    def name(self, value):
+        self.__name = value
 
     def calculate_total_price(self):
         return self.price * self.quantity
@@ -36,6 +44,7 @@ class Item:
                 price = float(item.get('price')),
                 quantity = int(item.get('quantity')),
             )
+   
     @staticmethod
     def is_integer(num):
         # We will coun out the floats that are point zero

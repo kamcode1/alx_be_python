@@ -1,20 +1,11 @@
 from item import Item
-from phone import Phone
+# from phone import Phone
 
 
-Item.instantiate_from_csv()
+Item1 = Item("MyItem", 750)
 
-print(Item.all)
-        # Actions to execute
-        # Phone.all.append(self)
-
-# phone1 = Phone("jscPhonev10", 500, 5, 1)
-
-# print(Item.all)
-
-# print(Phone.all)
-
-
+Item1.name = "OtherItem22"
+print(Item1.name)
 
 
 
