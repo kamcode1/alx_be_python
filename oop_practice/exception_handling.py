@@ -20,7 +20,7 @@
 class ValueTooHighError(Exception):
     def __init__(self, value, message = "value is too high"):
         self.value = value
-        self.message = message
+        self.mes = message
         super().__init__(self.message)
 
 def check_value(number):
