@@ -27,8 +27,7 @@
 # print(repr(book1))
 
 class Animal:
-
-
+    
     def eat(self):
         print(f"This animal is eating.")
     
@@ -36,10 +35,11 @@ class Animal:
         print(f"This animal is sleeping.")
 
 class Dog(Animal):
+    
 
     def bark(self):
         print(f"This Dog is Barking out of his lung!")
-    
+        
 animal = Animal()
 dog = Dog()
 
