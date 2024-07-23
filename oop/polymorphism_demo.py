@@ -8,10 +8,10 @@ class Shape:
 class Rectangle(Shape):
     def __init__(self, length, width):
         super().__init__()
-        self.lenght = length
+        self.length = length
         self.width = width
     def area(self):
-        return self.lenght * self.width
+        return self.length * self.width
 
 class Circle(Shape):
     from math import pi
